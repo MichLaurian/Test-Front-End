@@ -16,7 +16,17 @@ const ProductList = () => {
     }
     return (
         <div>
-            lista de productos
+         {product.map((product) => {
+          return (
+           <span value={product.productId}  key={product.productId}>
+            {product.imageUrl} {product.imageUrl}
+            {product.price}
+           
+           </span>
+           
+          );
+         })}
+         
         </div>
     )
 }

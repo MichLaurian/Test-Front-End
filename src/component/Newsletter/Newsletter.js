@@ -40,13 +40,13 @@ const Newsletter = () => {
         handleSubmit,
        } = useForm(initialForm, validationForm);
  return (
-  <div className="divForm">
-   <form onSubmit={handleSubmit} className="form">
-    <div>
-     <h4>¡Únete a nuestras novedades y promociones!</h4>
-    </div>
-    <div>
-     <input
+  
+   <form onSubmit={handleSubmit} className="row formulario">
+
+     <h5>¡Únete a nuestras novedades y promociones!</h5>
+    
+    <div className="column">
+    <input
       className="textInput"
       placeholder="Ingresa tu nombre"
       required
@@ -68,8 +68,9 @@ const Newsletter = () => {
      {errors.email && <p style={styles}>{errors.email}</p>}
      <button className="suscribe">Suscribirme</button>
     </div>
+  
    </form>
-  </div>
+ 
  );
 };
 

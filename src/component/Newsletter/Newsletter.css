@@ -1,19 +1,24 @@
-.divForm{ 
+/* .divForm{ 
     background-color: rgba(235, 234, 232, 0.837);
-    padding: 20px;
+    padding: 0;
     width: 100%;
-    height: 150vh;
+    height: 17vh;
     align-items: center;
     justify-content: center;
-}
-.form{
-    display: grid;
+
+} */
+.formulario{
+    background-color: rgba(235, 234, 232, 0.837);
+    padding: 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    height: 17vh;
 }
 .textInput{
-    border: none ;
+  border: none ;
   background: white;
   border-radius: .25rem;
   padding: .75rem 1rem;
