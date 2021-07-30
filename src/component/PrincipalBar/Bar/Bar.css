@@ -32,15 +32,16 @@ nav {
     padding: 8px;
     border-radius: 25px;
     
-    background-color: rgb(221, 218, 218);
+    background-color: rgb(255, 255, 255);
   }
   
   .input__wrapper input {
     width: 100%;
     padding: 0 10px;
     border: none;
+    margin-bottom: 1px solid black;
     display: block;
-    background-color: rgb(221, 218, 218);
+    background-color: rgb(255, 255, 255);
   }
   
   .input__wrapper input:focus,

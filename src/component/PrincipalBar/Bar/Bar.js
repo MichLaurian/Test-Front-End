@@ -6,7 +6,7 @@ const Bar = () => {
             <div className="nav__left">corebiz</div>
             <div className="nav__middle">
                 <div className="input__wrapper">
-                    <input type="text" />
+                    <input type="text" placeholder='¿Qué estas buscando?' />
                     <i className="fas fa-search"></i>
                 </div>
             </div>

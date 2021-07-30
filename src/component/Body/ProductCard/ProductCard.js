@@ -6,20 +6,22 @@ import Rate from "../../Rate";
 const ProductCard = ({ product }) => {
     let opts = {format:'%s%v', symbol: "$"}
  return (
-  <div className="productCard__wrapper">
+  <div className="container list__wrapper">
+      <div className="productCard__wrapper">
    <div>
     <img src={product.imageUrl} className="productCard
     __img" />
     <h5>{product.productName}</h5>
     <div className="ProductCard__price">
-        <h5>{formatCurrency(`${product.price}`, opts)}</h5>
+        <h5>Por {formatCurrency(`${product.price}`, opts)}</h5>
 
 <div className="ProductCard__Rateing">
     <Rate value={product.starts}/>
 </div>
-        <button className="ProductCard__buton">Comprar</button>
+        <button className="ProductCard__button">Comprar</button>
     </div>
    </div>
+  </div>
   </div>
  );
 };
